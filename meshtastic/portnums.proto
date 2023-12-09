@@ -219,6 +219,9 @@ enum PortNum {
    */
   ATAK_FORWARDER = 257;
 
+  /* Nearby Yacht Area Network */
+  NYAN = 345;
+
   /*
    * Currently we limit port nums to no higher than this value
    */
