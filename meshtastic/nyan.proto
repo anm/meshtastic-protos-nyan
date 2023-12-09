@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package nyan;
+
+option csharp_namespace = "Meshtastic.Protobufs";
+// option go_package = "github.com/meshtastic/go/generated";
+option java_outer_classname = "NyanProtos";
+option java_package = "cat.river.nyan";
+option swift_prefix = "";
+
+message wind {
+  uint32 GWS_mean = 1;
+  uint32 GWS_gust = 2;
+  uint32 GWD_mean = 5;
+
+  //  uint32 GWD_stddev = 6;
+}
+
+/*
+barometric_pressure = 1;
+air_temperatire = 2;
+air_humidity = 3;
+water_temperature = 4;
+water_depth = 5;
+*/
