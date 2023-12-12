@@ -8,7 +8,7 @@ option java_outer_classname = "NyanProtos";
 option java_package = "cat.river.nyan";
 option swift_prefix = "";
 
-message wind {
+message telemetry {
   uint32 GWS_mean = 1;
   uint32 GWS_gust = 2;
   uint32 GWD_mean = 5;
