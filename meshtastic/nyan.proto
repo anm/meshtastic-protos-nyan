@@ -12,14 +12,12 @@ message telemetry {
   uint32 GWS_mean = 1;
   uint32 GWS_gust = 2;
   uint32 GWD_mean = 5;
-
   //  uint32 GWD_stddev = 6;
-}
 
-/*
-barometric_pressure = 1;
-air_temperatire = 2;
-air_humidity = 3;
-water_temperature = 4;
-water_depth = 5;
-*/
+  float barometric_pressure = 10;
+  float barometric_pressure_trend = 11; // what if moving?
+  float air_temperature = 15;
+  uint32 air_humidity_relative = 16;
+  float water_temperature = 17;
+  float water_depth = 18;
+}
