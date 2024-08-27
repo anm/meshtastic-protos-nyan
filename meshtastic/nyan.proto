@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package nyan;
 
-option csharp_namespace = "Meshtastic.Protobufs";
+option csharp_namespace = "Nyan.Protobufs";
 // option go_package = "github.com/meshtastic/go/generated";
 option java_outer_classname = "NyanProtos";
 option java_package = "cat.river.nyan";
@@ -20,4 +20,7 @@ message telemetry {
   uint32 air_humidity_relative = 16;
   float water_temperature = 17;
   float water_depth = 18;
+
+  double latitude  = 20;
+  double longitude = 21;
 }
