@@ -9,18 +9,19 @@ option java_package = "cat.river.nyan";
 option swift_prefix = "";
 
 message telemetry {
-  uint32 GWS_mean = 1;
-  uint32 GWS_gust = 2;
-  uint32 GWD_mean = 5;
-  //  uint32 GWD_stddev = 6;
+  optional uint32 GWS_mean = 1;
+  optional uint32 GWS_gust = 2;
+  optional uint32 GWD_mean = 5;
+  //  optional uint32 GWD_stddev = 6;
 
-  float barometric_pressure = 10;
-  float barometric_pressure_trend = 11; // what if moving?
-  float air_temperature = 15;
-  uint32 air_humidity_relative = 16;
-  float water_temperature = 17;
-  float water_depth = 18;
+  optional float barometric_pressure = 10;
+  optional float barometric_pressure_trend = 11; // what if moving?
+  optional float air_temperature = 15;
+  optional uint32 air_humidity_relative = 16;
+  optional float water_temperature = 17;
+  optional float water_depth = 18;
+  optional float water_depth_below_keel  = 19;
 
-  double latitude  = 20;
-  double longitude = 21;
+  optional double latitude  = 20;
+  optional double longitude = 21;
 }

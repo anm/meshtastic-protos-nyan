@@ -1124,6 +1124,11 @@ message Config {
    */
   message SessionkeyConfig {}
 
+  message NyanConfig {
+    bool test_send = 1;
+    uint32 test_reporting_period = 2;
+  }
+
   /*
    * Payload Variant
    */
@@ -1137,6 +1142,9 @@ message Config {
     BluetoothConfig bluetooth = 7;
     SecurityConfig security = 8;
     SessionkeyConfig sessionkey = 9;
+
     DeviceUIConfig device_ui = 10;
+
+    NyanConfig nyan = 42;
   }
 }
