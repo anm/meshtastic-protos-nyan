@@ -24,4 +24,7 @@ message telemetry {
 
   optional double latitude  = 20;
   optional double longitude = 21;
+
+
+  optional uint32 nyan_supply_decivolts = 30;
 }
