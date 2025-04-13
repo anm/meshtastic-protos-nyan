@@ -27,4 +27,7 @@ message telemetry {
 
 
   optional uint32 nyan_supply_decivolts = 30;
+
+  optional uint32 lightning_strokes = 40;
+  optional uint32 lightning_distance = 41;
 }
